@@ -19,11 +19,9 @@ steps:
      sudo apt install -y ansible
 
 - script: |
-    cd Day5/TerraformWithAnsible
     terraform init
   displayName: 'Initialize Terrform Project'
 
 - script: |
-    cd Day5/TerraformWithAnsible
     terraform apply --auto-approve
   displayName: 'Provision 3 VMs and Install Nginx Web Server'
